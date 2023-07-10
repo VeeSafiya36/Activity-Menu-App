@@ -13,7 +13,7 @@ class Activity {
  
 // created a describe method with explorer and activity
     describe() {
-    return `${this.explorer} is exploring!`
+    return `${this.explorer} is interested in ${this.name}!`
     
     }
 // created a City class that takes in a name. Activities is made into an empty array
@@ -159,7 +159,8 @@ class Activity {
     // 0 and 4, and if so, deletes an activity.
     deleteActivity() {
     let index = prompt('Enter the index of the activity that you wish to delete: ');
-    if (index > -1 && index < this.selectedCity.activities.length) { this.selectedCity.activities.splice(index,1);
+    if (index > -1 && index < this.selectedCity.activities.length) { 
+        this.selectedCity.activities.splice(index,1);
     }
     }
     }
